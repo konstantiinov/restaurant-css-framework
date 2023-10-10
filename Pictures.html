@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Gallery with Pagination</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .gallery img {
+        width: 350px;
+        height: 300px;
+        margin: 10px;
+        border: 1px solid #ddd;
+        object-fit: cover;
+      }
+      body {
+        background-color: black;
+        color: orange;
+      }
+      .navbar-nav .nav-item .nav-link,
+      .navbar-toggler-icon {
+        color: #e9d985;
+      }
+
+      .navbar .navbar-toggler-icon {
+        background-color: #e9d985;
+        color: black;
+      }
+
+      .pagination .page-link {
+        background-color: orange;
+        border-color: orange;
+        color: white;
+      }
+
+      .pagination .page-link:hover,
+      .pagination .page-item.active .page-link {
+        background-color: #ff6600;
+        border-color: #ff6600;
+        color: white;
+      }
+      h1 {
+        font-family: "Samarkan";
+      }
+      .nav-link.disabled {
+        color: orange !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img
+            src="Logo_dark.png"
+            alt="Flavours of India Logo"
+            style="width: 100px; height: auto"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navmenu"
+        >
+          <i class="fa-solid fa-bars fa-lg" style="color: #e9d985"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="Welcome.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="Menu.html" class="nav-link">Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="Pictures.html" class="nav-link disabled">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="Restaurant.html" class="nav-link">Our Locations</a>
+            </li>
+            <li class="nav-item">
+              <a href="Contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-2">
+      <h1 class="text-center mb-4">Image Gallery</h1>
+
+      <div class="gallery" id="image-gallery"></div>
+
+      <ul class="pagination justify-content-center mt-4" id="pagination"></ul>
+    </div>
+
+    <script>
+      const images = [
+        "asia.jpg",
+        "jason.jpg",
+        "azmaan.jpg",
+        "neosiam.jpg",
+        "ratul.jpg",
+        "parij.jpg",
+        "victoria.jpg",
+        "idol.jpg",
+        "tajmahal_women.jpg",
+        "tajmahal.jpg",
+      ];
+
+      const imagesPerPage = 3;
+      let currentPage = 1;
+
+      function displayImages(page) {
+        const gallery = document.getElementById("image-gallery");
+        gallery.innerHTML = "";
+
+        const startIndex = (page - 1) * imagesPerPage;
+        const endIndex = startIndex + imagesPerPage;
+
+        for (let i = startIndex; i < endIndex && i < images.length; i++) {
+          const img = document.createElement("img");
+          img.src = images[i];
+          gallery.appendChild(img);
+        }
+      }
+
+      function buildPagination() {
+        const pagination = document.getElementById("pagination");
+        pagination.innerHTML = "";
+
+        const totalPages = Math.ceil(images.length / imagesPerPage);
+
+        for (let i = 1; i <= totalPages; i++) {
+          const li = document.createElement("li");
+          li.classList.add("page-item");
+          const a = document.createElement("a");
+          a.classList.add("page-link");
+          a.href = "#";
+          a.textContent = i;
+          a.addEventListener("click", () => {
+            currentPage = i;
+            displayImages(currentPage);
+            updateActivePage();
+          });
+          li.appendChild(a);
+          pagination.appendChild(li);
+        }
+      }
+
+      function updateActivePage() {
+        const pagination = document.getElementById("pagination");
+        const pageItems = pagination.querySelectorAll(".page-item");
+        pageItems.forEach((item, index) => {
+          if (index + 1 === currentPage) {
+            item.classList.add("active");
+          } else {
+            item.classList.remove("active");
+          }
+        });
+      }
+
+      displayImages(currentPage);
+      buildPagination();
+      updateActivePage();
+    </script>
+  </body>
+</html>

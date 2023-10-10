@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Indian Restaurant Menu</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <style>
+      body {
+        background-color: black;
+      }
+      .container {
+        color: #e9d985;
+      }
+      .badge-primary {
+        background-color: orange;
+      }
+      .list-group-item.active {
+        background-color: orange;
+        border-color: transparent;
+      }
+      .list-group-item small.text-muted {
+        color: white;
+      }
+      .list-group-item {
+        background-color: rgba(0, 0, 0, 0);
+      }
+      .navbar-nav .nav-item .nav-link,
+      .navbar-toggler-icon {
+        color: #e9d985;
+      }
+
+      .navbar .navbar-toggler-icon {
+        background-color: #e9d985;
+        color: black;
+      }
+      .nav-link.disabled {
+        color: orange !important;
+      }
+      h1 {
+        font-family: "Samarkan";
+        color: orange;
+        font-size: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img
+            src="Logo_dark.png"
+            alt="Flavours of India Logo"
+            style="width: 100px; height: auto"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navmenu"
+        >
+          <i class="fa-solid fa-bars fa-lg" style="color: #e9d985"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="Welcome.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="Menu.html" class="nav-link disabled">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="Pictures.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="Restaurant.html" class="nav-link">Our Locations</a>
+            </li>
+            <li class="nav-item">
+              <a href="Contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="text-center mt-5">Flavors of India Menu</h1>
+
+      <ul class="list-group mt-4">
+        <li class="list-group-item active">Appetizers</li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Samosa</h5>
+              <small class="text-muted"
+                >Ingredients: Potatoes, peas, spices, pastry</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$4.99</span>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Pakoras</h5>
+              <small class="text-muted"
+                >Ingredients: Mixed vegetables, chickpea flour, spices</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$5.99</span>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Chaat</h5>
+              <small class="text-muted"
+                >Ingredients: Chickpeas, potatoes, yogurt, spices</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$6.99</span>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Aloo Tikki</h5>
+              <small class="text-muted"
+                >Ingredients: Spiced potato patties, tamarind chutney,
+                yogurt</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$5.99</span>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Bhel Puri</h5>
+              <small class="text-muted"
+                >Ingredients: Puffed rice, vegetables, tamarind sauce,
+                spices</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$6.99</span>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Hara Bhara Kebab</h5>
+              <small class="text-muted"
+                >Ingredients: Spinach and green peas patties, mint
+                chutney</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$5.99</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item active mt-4">Main Courses</li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Butter Chicken</h5>
+              <small class="text-muted"
+                >Ingredients: Chicken, butter, tomato sauce, cream,
+                spices</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$14.99</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Paneer Tikka Masala</h5>
+              <small class="text-muted"
+                >Ingredients: Paneer cheese, tomato gravy, spices</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$12.99</span>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Biryani</h5>
+              <small class="text-muted"
+                >Ingredients: Basmati rice, meat/vegetables, aromatic
+                spices</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$16.99</span>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Rogan Josh</h5>
+              <small class="text-muted"
+                >Ingredients: Lamb, yogurt, spices</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$13.99</span>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Chana Masala</h5>
+              <small class="text-muted"
+                >Ingredients: Chickpeas, tomatoes, spices</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$10.99</span>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Chicken Tikka</h5>
+              <small class="text-muted"
+                >Ingredients: Chicken, yogurt, spices</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$11.99</span>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Lamb Korma</h5>
+              <small class="text-muted"
+                >Ingredients: Lamb, cashews, cream, spices</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$15.99</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item active mt-4">Desserts</li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Gulab Jamun</h5>
+              <small class="text-muted"
+                >Ingredients: Milk solids, sugar, cardamom</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$4.99</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Ras Malai</h5>
+              <small class="text-muted"
+                >Ingredients: Cottage cheese, milk, saffron</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$5.99</span>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Mango Lassi</h5>
+              <small class="text-muted"
+                >Ingredients: Mango, yogurt, sugar</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$4.99</span>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Kheer</h5>
+              <small class="text-muted"
+                >Ingredients: Rice, milk, nuts, sugar</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$5.99</span>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <h5 class="mb-0">Gajar Halwa</h5>
+              <small class="text-muted"
+                >Ingredients: Carrots, milk, sugar, ghee</small
+              >
+            </div>
+            <div class="col-lg-6 text-right">
+              <span class="badge badge-primary badge-pill">$6.99</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
