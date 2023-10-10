@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <title>News Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <style>
+      body {
+        background-color: black;
+      }
+      .jumbotron {
+        background-color: #f37922;
+      }
+      .card {
+        background-color: #e9d985;
+        height: 100%;
+      }
+      .navbar-nav .nav-item .nav-link,
+      .navbar-toggler-icon {
+        color: #e9d985;
+      }
+
+      .navbar .navbar-toggler-icon {
+        background-color: #e9d985;
+        color: black;
+      }
+      .nav-link.disabled {
+        color: orange !important;
+      }
+
+      .red-btn {
+        background-color: red;
+        border-color: red;
+        color: white;
+      }
+
+      .red-btn:hover,
+      .red-btn:focus,
+      .red-btn:active {
+        background-color: #ff0000;
+        border-color: #ff0000;
+        color: white;
+      }
+      .container {
+        background: url("buffet.jpg") no-repeat center center;
+        background-size: cover;
+        padding: 20px;
+        border-radius: 10px;
+        background-attachment: fixed;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img
+            src="Logo_dark.png"
+            alt="Flavours of India Logo"
+            style="width: 100px; height: auto"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navmenu"
+        >
+          <i class="fa-solid fa-bars fa-lg" style="color: #e9d985"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="Welcome.html" class="nav-link disabled">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="Menu.html" class="nav-link">Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="Pictures.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="Restaurant.html" class="nav-link">Our Locations</a>
+            </li>
+            <li class="nav-item">
+              <a href="Contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+      <img
+        src="script.png"
+        alt="Image Alt Text"
+        width="auto"
+        height="auto"
+        class="img-fluid"
+      />
+      <p class="lead">
+        Immerse yourself in a world of culinary excellence, where tradition
+        meets innovation. At Flavours of India, we invite you to savor the
+        finest flavors, curated with precision and passion. Stay updated with
+        the latest news, exclusive promotions, and captivating events that
+        promise to elevate your dining experience.
+      </p>
+      <a href="#" class="btn btn-lg red-btn">Learn More</a>
+    </div>
+
+    <div class="container mb-4">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Promotions</h2>
+              <p class="card-text">
+                Indulge in the opulent world of Indian gastronomy with our
+                carefully curated exclusive promotions. At Flavours of India, we
+                invite you to savor an exquisite dining experience, complemented
+                by a privileged 20% discount on all dine-in orders this week.
+                Join us to relish the symphony of flavors that only the finest
+                Indian cuisine can offer.
+              </p>
+              <a href="#" class="btn red-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Upcoming Events</h2>
+              <p class="card-text">
+                Immerse yourself in a world of sophistication and culture at
+                Flavours of India's upcoming gala events. Our next soirée is the
+                illustrious "Indian Food Festival" happening this Saturday.
+                Embark on a gastronomic odyssey through India's rich culinary
+                heritage, accompanied by live orchestral melodies and an array
+                of exquisite dishes.
+              </p>
+              <a href="#" class="btn red-btn">See Events</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.cookie = "visited=true";
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
