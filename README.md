@@ -1,5 +1,5 @@
 
-This is my README file for the restaurant css framework task. I have created a 5 page website for an Indian restaurant, using CSS and HTML. The tools that I used to achieve this were Visual Studio Code along with Bootstrap.
+This is my README file for the restaurant css framework task. I have created a 5 page website for an Indian restaurant, using CSS and HTML. The tools that I used to achieve this were Visual Studio Code along with Bootstrap. I have also used Canva in order to create a logo and some text styles.
 Here are the links to all the images that I have used:
 
   Photo de <a href="https://unsplash.com/fr/@louishansel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Louis Hansel</a> sur <a href="https://unsplash.com/fr/photos/1keEJmqm8vU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
